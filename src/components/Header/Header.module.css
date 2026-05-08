@@ -1,0 +1,20 @@
+.header {
+  background-color: #001529;
+
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 6px 10px;
+  border-radius: 8px;
+}
+
+.header__title {
+  color: #ffffff;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}

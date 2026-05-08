@@ -1,0 +1,17 @@
+export const menuItems = [
+  { id: "about", label: "About", path: "about" },
+  { id: "structure", label: "Project structure", path: "/structure" },
+  { id: "components", label: "Components", path: "/components" },
+  { id: "props", label: "Props", path: "/props" },
+  { id: "tate", label: "State (useState)", path: "/state" },
+  { id: "lifeCycle", label: "LifeCycle (useEffect)", path: "lifeCycle" },
+  { id: "events", label: "Events", path: "events" },
+  { id: "ref", label: "Ref-Fragment-key", path: "ref" },
+  { id: "memo", label: "React.memo, (useMemo)", path: "memo" },
+  { id: "callback", label: "useCallback", path: "callback" },
+  { id: "context", label: "Context (useContext)", path: "context" },
+  { id: "router", label: "React Router", path: "router" },
+  { id: "forms", label: "Forms-Formik", path: "forms" },
+  { id: "storage", label: "STORAGEs", path: "storage" },
+  { id: "hoc", label: "HOC", path: "hoc" },
+];

@@ -3,7 +3,7 @@ export const menuItems = [
   { id: "structure", label: "Project structure", path: "/structure" },
   { id: "components", label: "Components", path: "/components" },
   { id: "props", label: "Props", path: "/props" },
-  { id: "tate", label: "State (useState)", path: "/state" },
+  { id: "state", label: "State (useState)", path: "/state" },
   { id: "lifeCycle", label: "LifeCycle (useEffect)", path: "lifeCycle" },
   { id: "events", label: "Events", path: "events" },
   { id: "ref", label: "Ref-Fragment-key", path: "ref" },

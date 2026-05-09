@@ -1,0 +1,17 @@
+export const ROUTES = {
+  about: "/about",
+  structure: "/structure",
+  components: "/components",
+  props: "/props",
+  state: "/state",
+  lifeCycle: "/lifeCycle",
+  events: "/events",
+  ref: "/ref",
+  memo: "/memo",
+  callback: "/callback",
+  context: "/context",
+  router: "/router",
+  forms: "/forms",
+  storage: "/storage",
+  hoc: "/hoc",
+};

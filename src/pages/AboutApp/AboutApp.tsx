@@ -3,7 +3,7 @@ import s from "./AboutApp.module.css";
 
 export const AboutApp = () => {
   return (
-    <div className={s.container}>
+    <section className={s.container}>
       <p className={s.description}>
         <span className={s.highlight}>React notebook</span> — это небольшое
         приложение, разработанное с использованием библиотеки React,
@@ -45,6 +45,6 @@ export const AboutApp = () => {
       </ul>
 
       <Footer />
-    </div>
+    </section>
   );
 };

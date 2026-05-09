@@ -4,9 +4,9 @@ import s from "./ProjectStructure.module.css";
 
 export const ProjectStructure = () => {
   return (
-    <div className={s.container}>
+    <article className={s.container}>
       <h2 className={s.title}>Структура React проекта</h2>
-      <div className={s.content}>
+      <section className={s.content}>
         {structureData.map((item) => (
           <div
             key={item.id}
@@ -20,8 +20,8 @@ export const ProjectStructure = () => {
             <span className={s.description}>{item.desc}</span>
           </div>
         ))}
-      </div>
+      </section>
       <Footer />
-    </div>
+    </article>
   );
 };

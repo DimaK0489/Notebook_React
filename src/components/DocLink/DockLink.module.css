@@ -1,0 +1,23 @@
+.wrapper {
+  width: 100vw;
+  max-width: 250px;
+  margin: 20px auto;
+  padding: 12px;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  border: 1px dashed #d1d5da;
+}
+
+.link {
+  color: #e14a54;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

@@ -1,6 +1,7 @@
 export const menuItems = [
   { id: "about", label: "About", path: "about" },
   { id: "structure", label: "Project structure", path: "/structure" },
+  { id: "virtualDOM", label: "Virtual DOM", path: "/virtualDOM" },
   { id: "components", label: "Components", path: "/components" },
   { id: "props", label: "Props", path: "/props" },
   { id: "state", label: "State (useState)", path: "/state" },

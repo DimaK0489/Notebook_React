@@ -1,6 +1,7 @@
 export const ROUTES = {
   about: "/about",
   structure: "/structure",
+  virtualDom: "/virtualDom",
   components: "/components",
   props: "/props",
   state: "/state",

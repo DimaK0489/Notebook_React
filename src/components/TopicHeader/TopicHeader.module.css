@@ -1,0 +1,14 @@
+.section {
+  margin-bottom: 35px;
+}
+
+.title {
+  color: #001529;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}

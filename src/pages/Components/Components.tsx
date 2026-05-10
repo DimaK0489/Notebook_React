@@ -1,5 +1,6 @@
 import { DockLink } from "../../components/DocLink/DockLink";
 import { ImportantBox } from "../../components/ImportantBox/ImportantBox";
+import { TopicHeader } from "../../components/TopicHeader/TopicHeader";
 import s from "./Components.module.css";
 
 export const Components = () => {
@@ -9,16 +10,16 @@ export const Components = () => {
 
   return (
     <article className={s.container}>
-      <h1 className={s.title}>Компоненты</h1>
-
-      <section className={s.section}>
-        <p className={s.description}>
-          <strong>Компонент</strong> - это функция, потому что она получает
-          данные в одном объекте («пропсы») в качестве параметра и возвращает
-          React-элемент. Существуют классовые и функциональные компоненты.
-        </p>
-      </section>
-
+      <TopicHeader
+        title="Компоненты"
+        description={
+          <>
+            <strong>Компонент</strong> - это функция, потому что она получает
+            данные в одном объекте («пропсы») в качестве параметра и возвращает
+            React-элемент. Существуют классовые и функциональные компоненты.
+          </>
+        }
+      />
       <section className={s.section}>
         <h2 className={s.subtitle}>Функциональные и классовые компоненты</h2>
         <div className={s.example}>

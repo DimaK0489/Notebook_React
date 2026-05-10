@@ -6,6 +6,7 @@ import { ROUTES } from "./constants/routes";
 import { ProjectStructure } from "./pages/ProjectStructure/ProjectStructure";
 import { Components } from "./pages/Components/Components";
 import { VirtualDom } from "./pages/virtualDom/virtualDom";
+import { PropsPage } from "./pages/PropsPage/PropsPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path={ROUTES.structure} element={<ProjectStructure />} />
         <Route path={ROUTES.virtualDom} element={<VirtualDom />} />
         <Route path={ROUTES.components} element={<Components />} />
+        <Route path={ROUTES.props} element={<PropsPage />} />
       </Route>
     </Routes>
   );

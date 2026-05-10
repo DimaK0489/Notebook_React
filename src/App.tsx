@@ -8,6 +8,7 @@ import { Components } from "./pages/Components/Components";
 import { VirtualDom } from "./pages/virtualDom/virtualDom";
 import { PropsPage } from "./pages/PropsPage/PropsPage";
 import { UseStatePage } from "./pages/UseStatePage/UseStatePage";
+import { LifeCyclePage } from "./pages/LifeCyclePage/LifeCyclePage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path={ROUTES.rComponents} element={<Components />} />
         <Route path={ROUTES.rProps} element={<PropsPage />} />
         <Route path={ROUTES.rState} element={<UseStatePage />} />
+        <Route path={ROUTES.rLifeCycle} element={<LifeCyclePage />} />
       </Route>
     </Routes>
   );

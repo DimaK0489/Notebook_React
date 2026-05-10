@@ -1,0 +1,58 @@
+.wrapper {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  border: 2px dashed #1890ff;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.text {
+  font-size: 18px;
+  color: #c41d7f;
+}
+
+.updateBtn {
+  background: #52c41a;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.logWindow {
+  background: #1e1e1e;
+  color: #dcdcdc;
+  padding: 15px;
+  border-radius: 6px;
+  font-family: "Consolas", monospace;
+  font-size: 13px;
+  min-height: 120px;
+}
+
+.logTitle {
+  color: #569cd6;
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logEntry {
+  margin-bottom: 5px;
+  border-left: 2px solid #3e3e3e;
+  padding-left: 8px;
+}

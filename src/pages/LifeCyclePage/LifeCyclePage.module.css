@@ -1,0 +1,85 @@
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #001529;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: transform 0.2s ease;
+}
+
+.card h4 {
+  color: #1890ff;
+  font-size: 16px;
+}
+
+.card code {
+  display: block;
+  background: #fff;
+  padding: 8px;
+  margin: 12px 0;
+  font-size: 13px;
+  border-radius: 6px;
+  color: #c41d7f;
+  border: 1px solid #f0f0f0;
+}
+
+.code {
+  background: #282c34;
+  color: #abb2bf;
+  padding: 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.demoContainer {
+  background: #f0f2f5;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  padding: 0 0 20px 0;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #001529;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 20px auto;
+}
+
+.mainToggle:hover {
+  background: #1890ff;
+}
+
+.item {
+  color: #c41d7f;
+}

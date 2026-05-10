@@ -69,3 +69,13 @@ export const destructuringProps = `const ChildComponent = ({allData}) => {
 export const functionalCode = `const Welcome = (props) => {\n  return <h1>Привет, {props.name}</h1>;\n};`;
 
 export const classCode = `class Welcome extends React.Component {\n  render() {\n    return <h1>Привет, {this.props.name}</h1>;\n  }\n}`;
+
+export const useEffectExample = `useEffect(() => {
+  // Код эффекта (например, подписка на данные)
+  console.log('Эффект выполнен');
+
+  return () => {
+    // Функция очистки (cleanup)
+    console.log('Очистка эффекта');
+  };
+}, [dependency]); // Массив зависимостей`;

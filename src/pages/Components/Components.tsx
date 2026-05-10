@@ -1,13 +1,10 @@
 import { DocLink } from "../../components/DocLink/DocLink";
 import { ImportantBox } from "../../components/ImportantBox/ImportantBox";
 import { TopicHeader } from "../../components/TopicHeader/TopicHeader";
+import { classCode, functionalCode } from "../../constants/codeExample";
 import s from "./Components.module.css";
 
 export const Components = () => {
-  const functionalCode = `const Welcome = (props) => {\n  return <h1>Привет, {props.name}</h1>;\n};`;
-
-  const classCode = `class Welcome extends React.Component {\n  render() {\n    return <h1>Привет, {this.props.name}</h1>;\n  }\n}`;
-
   return (
     <article className={s.container}>
       <TopicHeader

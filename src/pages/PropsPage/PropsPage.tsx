@@ -1,20 +1,14 @@
 import { DocLink } from "../../components/DocLink/DocLink";
 import { ImportantBox } from "../../components/ImportantBox/ImportantBox";
 import { TopicHeader } from "../../components/TopicHeader/TopicHeader";
+import {
+  accessProps,
+  destructuringProps,
+  transferProps,
+} from "../../constants/codeExample";
 import s from "./PropsPage.module.css";
 
 export const PropsPage = () => {
-  const transferProps = `const ParentComponent = () => {
-  const data = {id: 1, name: 'I am props'};
-  return <ChildComponent allData={data} />;
-  }`;
-  const AccessProps = `const ChildComponent = (props) => {
-  return <div>{props.allData.name}</div>;
-  }`;
-  const destructuringProps = `const ChildComponent = ({allData}) => {
-  return <div>{allData.name}</div>;
-  }`;
-
   return (
     <article className={s.container}>
       <TopicHeader
@@ -36,7 +30,7 @@ export const PropsPage = () => {
         <h2 className={s.title}>Доступ к props</h2>
         <div className={s.example}>
           <pre className={s.code}>
-            <code>{AccessProps}</code>
+            <code>{accessProps}</code>
           </pre>
         </div>
         <h2 className={s.title}>Деструктуризация props</h2>

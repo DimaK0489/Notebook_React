@@ -3,6 +3,11 @@ import { DocLink } from "../../components/DocLink/DocLink";
 import { ImportantBox } from "../../components/ImportantBox/ImportantBox";
 import { TopicHeader } from "../../components/TopicHeader/TopicHeader";
 import s from "./UseStatePage.module.css";
+import {
+  counterExample,
+  stateObj,
+  stateProps,
+} from "../../constants/codeExample";
 
 export const UseStatePage = () => {
   const [count, setCount] = useState<number>(0);
@@ -11,62 +16,6 @@ export const UseStatePage = () => {
   const increase = () => setCount((prevNum) => prevNum + 1);
   const reset = () => setCount(0);
 
-  const counterExample = `import { useState } from 'react';
-
-function Counter() {
-  // [значение, функция_обновления] = useState(начальное_значение)
-  const [count, setCount] = useState(0);
- 
-  // Когда новое состояние зависит от предыдущего,
-  // то лучше использовать функциональное обновление.
-  const increment = () => setCount((prevCount) => prevCount + 1)
-  
-  return (
-    <div>
-      <p>Вы нажали {count} раз</p>
-      <button onClick={increment}>
-        Нажми на меня
-      </button>
-    </div>
-  );
-}`;
-
-  const stateProps = `const ParentComponent = () => {
-  const [count, setCount] = useState(0);
-
-  const increment = () => {
-    setCount(prevCount => prevCount + 1);
-  };
-
-  return (
-    <div>
-      <ChildComponent count={count} />
-      <button onClick={increment}>Увеличить</button>
-    </div>
-  );
-};
-
-const ChildComponent = ({ count }) => {
-  return <p>Счетчик: {count}</p>;
-};`;
-
-  const stateObj = `import React, { useState } from 'react';
-
-const UserProfile = () => {
-  const [user, setUser] = useState({
-    name: '',
-    age: '',
-    email: ''
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    // создаем новый объект с обновленным свойством
-    setUser(prevUser => ({
-      ...prevUser,
-      [name]: value
-    }));
-  };`;
   return (
     <article className={s.container}>
       <TopicHeader
@@ -134,15 +83,15 @@ const UserProfile = () => {
         <ImportantBox title="Важные моменты">
           <ul>
             <li>
-              <strong>Не изменяй существующее состояние напрямую:</strong>Вместо
-              этого создавай новый объект с помощью оператора spread. Это
+              <strong>Не изменяй существующее состояние напрямую:</strong>{" "}
+              Вместо этого создавай новый объект с помощью оператора spread. Это
               позволяет React правильно отслеживать изменения состояния и
               ререндерить компонент при необходимости.
             </li>
           </ul>
           <ul>
             <li>
-              <strong>Используй функцию для обновления состояния:</strong>Когда
+              <strong>Используй функцию для обновления состояния:</strong> Когда
               новое состояние зависит от предыдущего, всегда! используй функцию
               для обновления, чтобы избежать проблем с конкурентным обновлением
               состояния.

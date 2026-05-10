@@ -1,4 +1,4 @@
-import { DockLink } from "../../components/DocLink/DockLink";
+import { DocLink } from "../../components/DocLink/DocLink";
 import { ImportantBox } from "../../components/ImportantBox/ImportantBox";
 import { TopicHeader } from "../../components/TopicHeader/TopicHeader";
 import s from "./PropsPage.module.css";
@@ -77,7 +77,7 @@ export const PropsPage = () => {
           </li>
         </ul>
       </ImportantBox>
-      <DockLink
+      <DocLink
         href="https://react.dev/learn/passing-props-to-a-component"
         title="Документация React-Props"
       />

@@ -1,11 +1,11 @@
-import s from "./DockLink.module.css";
+import s from "./DocLink.module.css";
 
 interface Props {
   href: string;
   title?: string;
 }
 
-export const DockLink = ({
+export const DocLink = ({
   href,
   title = "Официальная документация React",
 }: Props) => {

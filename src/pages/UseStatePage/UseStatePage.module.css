@@ -1,0 +1,123 @@
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+.sectionObj {
+  margin-bottom: 35px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #001529;
+  margin-bottom: 15px;
+}
+
+.demoBox {
+  background: #f0f7ff;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #bae7ff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.titleCount {
+  font-size: 18px;
+}
+
+.countValue {
+  position: relative;
+  top: 2px;
+  left: 0;
+  font-weight: 600;
+  font-size: 24px;
+  color: #1890ff;
+}
+
+.btnGroup {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.demoBtn {
+  padding: 8px 16px;
+  background: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.demoBtn:hover {
+  background: #40a9ff;
+}
+
+.reset {
+  background: #ff4d4f;
+}
+
+.reset:hover {
+  background: #ff7875;
+}
+
+.code {
+  background: #282c34;
+  color: #abb2bf;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+.importantText {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.nestedBox {
+  background-color: #d8d2d2;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.nestedTitle {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.nestedList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nestedList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.nestedList li:last-child {
+  margin-bottom: 0;
+}
+
+.emoji {
+  flex-shrink: 0;
+}

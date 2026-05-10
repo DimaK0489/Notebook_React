@@ -1,4 +1,4 @@
-import { DockLink } from "../../components/DocLink/DockLink";
+import { DocLink } from "../../components/DocLink/DocLink";
 import { Footer } from "../../components/Footer/Footer";
 import s from "./virtualDom.module.css";
 
@@ -45,7 +45,7 @@ export const VirtualDom = () => {
           DOM — самая дорогая операция в браузере.
         </p>
       </section>
-      <DockLink
+      <DocLink
         href="https://ru.legacy.reactjs.org/docs/faq-internals.html"
         title="Documentation Virtual DOM"
       />

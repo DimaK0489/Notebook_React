@@ -1,4 +1,4 @@
-import { DockLink } from "../../components/DocLink/DockLink";
+import { DocLink } from "../../components/DocLink/DocLink";
 import { ImportantBox } from "../../components/ImportantBox/ImportantBox";
 import { TopicHeader } from "../../components/TopicHeader/TopicHeader";
 import s from "./Components.module.css";
@@ -55,7 +55,7 @@ export const Components = () => {
           </li>
         </ul>
       </ImportantBox>
-      <DockLink
+      <DocLink
         href="https://ru.legacy.reactjs.org/docs/components-and-props.html"
         title="Документация React-components"
       />

@@ -9,6 +9,7 @@ import { VirtualDom } from "./pages/virtualDom/virtualDom";
 import { PropsPage } from "./pages/PropsPage/PropsPage";
 import { UseStatePage } from "./pages/UseStatePage/UseStatePage";
 import { LifeCyclePage } from "./pages/LifeCyclePage/LifeCyclePage";
+import { EventsPage } from "./pages/EventsPage/EventsPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path={ROUTES.rProps} element={<PropsPage />} />
         <Route path={ROUTES.rState} element={<UseStatePage />} />
         <Route path={ROUTES.rLifeCycle} element={<LifeCyclePage />} />
+        <Route path={ROUTES.rEvents} element={<EventsPage />} />
       </Route>
     </Routes>
   );

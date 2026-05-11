@@ -10,6 +10,7 @@ import { PropsPage } from "./pages/PropsPage/PropsPage";
 import { UseStatePage } from "./pages/UseStatePage/UseStatePage";
 import { LifeCyclePage } from "./pages/LifeCyclePage/LifeCyclePage";
 import { EventsPage } from "./pages/EventsPage/EventsPage";
+import { RefFragmentPage } from "./pages/RefFragmentPage/RefFragmentPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path={ROUTES.rState} element={<UseStatePage />} />
         <Route path={ROUTES.rLifeCycle} element={<LifeCyclePage />} />
         <Route path={ROUTES.rEvents} element={<EventsPage />} />
+        <Route path={ROUTES.rRef} element={<RefFragmentPage />} />
       </Route>
     </Routes>
   );

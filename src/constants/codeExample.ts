@@ -79,3 +79,32 @@ export const useEffectExample = `useEffect(() => {
     console.log('Очистка эффекта');
   };
 }, [dependency]); // Массив зависимостей`;
+
+export const useRefExample = `import React, { useRef } from 'react';  
+
+const InputFocus = () => {  
+  // Создаем реф с помощью useRef  
+  const inputRef = useRef(null);  
+
+  const focusInput = () => {  
+    // Делаем фокус на инпуте  
+    if (inputRef.current) {  
+      inputRef.current.focus();  
+    }  
+  };  
+
+  return (  
+    <div>  
+      <input ref={inputRef} 
+      type="text" 
+      placeholder="Нажми кнопку для фокуса" />  
+      <button onClick={focusInput}>
+      Фокус на инпуте
+      </button>  
+    </div>  
+  );  
+};  
+
+export default InputFocus;`;
+
+export const fragmentExample = `// Краткая запись фрагмента\n<>\n  <ComponentA />\n  <ComponentB />\n</>`;

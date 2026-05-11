@@ -108,3 +108,21 @@ const InputFocus = () => {
 export default InputFocus;`;
 
 export const fragmentExample = `// Краткая запись фрагмента\n<>\n  <ComponentA />\n  <ComponentB />\n</>`;
+
+export const memoExample1 = `const MyComponent = React.memo((props) => {\n  return <div>{props.value}</div>;\n});`;
+
+export const memoExample2 = `import React from 'react';
+
+const MyComponent = React.memo((props) => {
+  // Компонент будет перерисовываться только при изменении пропсов с помощью 
+  // compareFunction
+  return (
+    <div>
+      {props.text}
+    </div>
+  );
+}, (prevProps, nextProps) => {
+  // compareFunction - пользовательская функция сравнения пропсов
+  // Возвращает true, если пропсы должны считаться равными и 
+  // компонент не должен перерисовываться
+});`;

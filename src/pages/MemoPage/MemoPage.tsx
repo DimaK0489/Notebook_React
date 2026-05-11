@@ -3,6 +3,7 @@ import { TopicHeader } from "../../components/TopicHeader/TopicHeader";
 import s from "./MemoPage.module.css";
 import { ImportantBox } from "../../components/ImportantBox/ImportantBox";
 import { memoExample1, memoExample2 } from "../../constants/codeExample";
+import { DocLink } from "../../components/DocLink/DocLink";
 
 export const MemoPage = () => {
   const [count, setCount] = useState<number>(0);
@@ -73,18 +74,6 @@ export const MemoPage = () => {
             оптимизации функциональных компонентов, которые не зависят от
             состояния и контекста.
           </p>
-          {/* <p className={s.text}>
-            <strong>2. </strong>
-            <span className={s.importantSpan}>
-              {" "}
-              В React.memo можно использовать второй параметр — функцию
-              сравнения.
-            </span>{" "}
-            это функциональный компонент, который предотвращает повторный
-            рендеринг компонента, если его props не изменились. Это полезно для
-            оптимизации функциональных компонентов, которые не зависят от
-            состояния и контекста.
-          </p> */}
         </div>
       </ImportantBox>
       <section className={s.section}>
@@ -100,19 +89,36 @@ export const MemoPage = () => {
       <ImportantBox title="Функция сравнения React-memo">
         <div className={s.importantItem}>
           <p className={s.text}>
-            <strong>2. </strong>
             <span className={s.importantSpan}>
-              {" "}
               В React.memo можно использовать второй параметр — функцию
               сравнения.
             </span>{" "}
-            это функциональный компонент, который предотвращает повторный
-            рендеринг компонента, если его props не изменились. Это полезно для
-            оптимизации функциональных компонентов, которые не зависят от
-            состояния и контекста.
+            Эта функция, позволяет настраивать логику определения, нужно ли
+            повторно рендерить компонент. По умолчанию React.memo выполняет
+            поверхностное сравнение props, но вы можете предоставить свою
+            функцию для более тонкой настройки.
           </p>
         </div>
       </ImportantBox>
+      <ImportantBox title="Когда НЕ нужно использовать оптимизацию">
+        <div className={s.importantItem}>
+          <p>
+            Не используйте мемоизацию везде подряд. Она сама по себе потребляет
+            память. Оптимизируйте только тогда, когда компонент действительно
+            тяжелый или вычисления занимают много времени.
+          </p>
+        </div>
+      </ImportantBox>
+      <div className={s.links}>
+        <DocLink
+          href="https://react.dev/reference/react/memo"
+          title="Документация React-memo"
+        />
+        <DocLink
+          href="https://react.dev/reference/react/useMemo"
+          title="Документация React-useMemo"
+        />
+      </div>
     </article>
   );
 };

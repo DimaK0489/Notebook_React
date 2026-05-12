@@ -126,3 +126,5 @@ const MyComponent = React.memo((props) => {
   // Возвращает true, если пропсы должны считаться равными и 
   // компонент не должен перерисовываться
 });`;
+
+export const useCallbackCode = `const memoizedCallback = useCallback(\n  () => {\n    doSomething(a, b);\n  },\n  [a, b],\n);`;

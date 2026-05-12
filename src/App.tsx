@@ -12,6 +12,7 @@ import { LifeCyclePage } from "./pages/LifeCyclePage/LifeCyclePage";
 import { EventsPage } from "./pages/EventsPage/EventsPage";
 import { RefFragmentPage } from "./pages/RefFragmentPage/RefFragmentPage";
 import { MemoPage } from "./pages/MemoPage/MemoPage";
+import { UseCallbackPage } from "./pages/UseCallbackPage/UseCallbackPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path={ROUTES.rEvents} element={<EventsPage />} />
         <Route path={ROUTES.rRef} element={<RefFragmentPage />} />
         <Route path={ROUTES.rMemo} element={<MemoPage />} />
+        <Route path={ROUTES.rCallback} element={<UseCallbackPage />} />
       </Route>
     </Routes>
   );

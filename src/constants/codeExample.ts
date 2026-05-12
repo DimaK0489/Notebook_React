@@ -230,3 +230,10 @@ function SearchPage() {
     </div>  
   );  
 }`;
+
+export const controlledCode = `const [val, setVal] = useState("");
+
+<input 
+  value={val} 
+  onChange={(e) => setVal(e.target.value)} 
+/>`;

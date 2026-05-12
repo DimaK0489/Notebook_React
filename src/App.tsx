@@ -13,6 +13,7 @@ import { EventsPage } from "./pages/EventsPage/EventsPage";
 import { RefFragmentPage } from "./pages/RefFragmentPage/RefFragmentPage";
 import { MemoPage } from "./pages/MemoPage/MemoPage";
 import { UseCallbackPage } from "./pages/UseCallbackPage/UseCallbackPage";
+import { ContextPage } from "./pages/ContextPage/ContextPage";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path={ROUTES.rRef} element={<RefFragmentPage />} />
         <Route path={ROUTES.rMemo} element={<MemoPage />} />
         <Route path={ROUTES.rCallback} element={<UseCallbackPage />} />
+        <Route path={ROUTES.rContext} element={<ContextPage />} />
       </Route>
     </Routes>
   );

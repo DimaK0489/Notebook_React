@@ -1,0 +1,87 @@
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #001529;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.visualBox {
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.diagram {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.diagramColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.badge {
+  padding: 4px 12px;
+  background: #ffccc7;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badgeBlue {
+  background: #bae7ff;
+}
+
+.treeLine {
+  font-family: monospace;
+  font-size: 14px;
+  color: #333;
+}
+
+.description {
+  max-width: 250px;
+  font-size: 13px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.arrow {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.code {
+  background: #282c34;
+  color: #abb2bf;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.importantItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.importantTitle {
+  font-size: 16px;
+}

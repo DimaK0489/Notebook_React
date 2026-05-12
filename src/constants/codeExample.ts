@@ -128,3 +128,14 @@ const MyComponent = React.memo((props) => {
 });`;
 
 export const useCallbackCode = `const memoizedCallback = useCallback(\n  () => {\n    doSomething(a, b);\n  },\n  [a, b],\n);`;
+
+export const contextCode = `// 1. Создаем контекст
+const ThemeContext = createContext('light');
+
+// 2. Оборачиваем дерево в Provider
+<ThemeContext.Provider value="dark">
+  <App />
+</ThemeContext.Provider>
+
+// 3. Используем в любом дочернем компоненте
+const theme = useContext(ThemeContext);`;

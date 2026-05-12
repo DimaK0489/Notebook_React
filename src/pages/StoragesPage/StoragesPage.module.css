@@ -1,0 +1,123 @@
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #001529;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  padding: 20px;
+  background: #f6f8fa;
+  border-radius: 8px;
+  border: 1px solid #e1e4e8;
+}
+
+.tag {
+  display: inline-block;
+  background: #e6f7ff;
+  color: #1890ff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.cookieTag {
+  background: #fff7e6;
+  color: #fa8c16;
+}
+
+.demoBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: #f0f5ff;
+  padding: 20px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.saveBtn {
+  padding: 10px 20px;
+  background: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.clearBtn {
+  padding: 10px 20px;
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.saveBtn:hover {
+  background: #5aa9f2;
+}
+
+.clearBtn:hover {
+  background: #ff7875;
+}
+
+.hint {
+  width: 100%;
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+  margin: 8px 0 0 0;
+}
+
+.code {
+  background: #282c34;
+  color: #abb2bf;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+}
+
+.importantItem {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}

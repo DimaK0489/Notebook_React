@@ -237,3 +237,12 @@ export const controlledCode = `const [val, setVal] = useState("");
   value={val} 
   onChange={(e) => setVal(e.target.value)} 
 />`;
+
+export const storageCode = `// Сохранение данных
+localStorage.setItem('myKey', 'myValue');
+
+// Получение данных
+const data = localStorage.getItem('myKey');
+
+// Удаление
+localStorage.removeItem('myKey');`;

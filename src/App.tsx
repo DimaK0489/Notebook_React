@@ -16,6 +16,7 @@ import { UseCallbackPage } from "./pages/UseCallbackPage/UseCallbackPage";
 import { ContextPage } from "./pages/ContextPage/ContextPage";
 import { RouterPage } from "./pages/RouterPage/RouterPage";
 import { FormsPage } from "./pages/FormsPage/FormsPage";
+import { StoragesPage } from "./pages/StoragesPage/StoragesPage";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path={ROUTES.rContext} element={<ContextPage />} />
         <Route path={ROUTES.rRouter} element={<RouterPage />} />
         <Route path={ROUTES.rForms} element={<FormsPage />} />
+        <Route path={ROUTES.rStorage} element={<StoragesPage />} />
       </Route>
     </Routes>
   );

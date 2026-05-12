@@ -2,9 +2,9 @@ import { DocLink } from "../../components/DocLink/DocLink";
 import { ImportantBox } from "../../components/ImportantBox/ImportantBox";
 import { TopicHeader } from "../../components/TopicHeader/TopicHeader";
 import { classCode, functionalCode } from "../../constants/codeExample";
-import s from "./Components.module.css";
+import s from "./ComponentsPage.module.css";
 
-export const Components = () => {
+export const ComponentsPage = () => {
   return (
     <article className={s.container}>
       <TopicHeader

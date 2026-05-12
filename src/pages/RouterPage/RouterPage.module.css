@@ -1,0 +1,72 @@
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #001529;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.componentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.compCard {
+  padding: 16px;
+  background: #f6f8fa;
+  border-radius: 8px;
+  border: 1px solid #e1e4e8;
+}
+
+.compTag {
+  display: inline-block;
+  color: #d73a49;
+  background: #ffeef0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.compCard p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.code {
+  background: #282c34;
+  color: #abb2bf;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+.importantItem {
+  display: flex;
+  gap: 12px;
+}
+
+.inlineCode {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #c41d7f;
+  margin-top: 5px;
+}

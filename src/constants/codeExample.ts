@@ -139,3 +139,22 @@ const ThemeContext = createContext('light');
 
 // 3. Используем в любом дочернем компоненте
 const theme = useContext(ThemeContext);`;
+
+export const routerCode = `import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <nav>
+        <Link to="/">Главная</Link>
+        <Link to="/about">О нас</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}`;

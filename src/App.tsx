@@ -17,6 +17,7 @@ import { ContextPage } from "./pages/ContextPage/ContextPage";
 import { RouterPage } from "./pages/RouterPage/RouterPage";
 import { FormsPage } from "./pages/FormsPage/FormsPage";
 import { StoragesPage } from "./pages/StoragesPage/StoragesPage";
+import { HocPage } from "./pages/HocPage/HocPage";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path={ROUTES.rRouter} element={<RouterPage />} />
         <Route path={ROUTES.rForms} element={<FormsPage />} />
         <Route path={ROUTES.rStorage} element={<StoragesPage />} />
+        <Route path={ROUTES.rHoc} element={<HocPage />} />
       </Route>
     </Routes>
   );

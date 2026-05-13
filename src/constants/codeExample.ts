@@ -246,3 +246,20 @@ const data = localStorage.getItem('myKey');
 
 // Удаление
 localStorage.removeItem('myKey');`;
+
+export const hocExample = `// 1. Создаем HOC (функцию)
+const withAuth = (WrappedComponent) => {
+  return (props) => {
+    const isAuth = localStorage.getItem('token');
+
+    if (!isAuth) {
+      return <div>Пожалуйста, войдите в систему</div>;
+    }
+
+    return <WrappedComponent {...props} />;
+  };
+};
+
+// 2. Оборачиваем обычный компонент
+const SecretDashboard = () => <h1>Секретные данные</h1>;
+export const ProtectedDashboard = withAuth(SecretDashboard);`;

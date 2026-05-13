@@ -1,4 +1,3 @@
-import { Footer } from "../../components/Footer/Footer";
 import s from "./AboutApp.module.css";
 
 export const AboutApp = () => {
@@ -43,8 +42,6 @@ export const AboutApp = () => {
           </p>
         </li>
       </ul>
-
-      <Footer />
     </section>
   );
 };

@@ -1,4 +1,3 @@
-import { Footer } from "../../components/Footer/Footer";
 import { structureData } from "../../constants/structureApp";
 import s from "./ProjectStructure.module.css";
 
@@ -21,7 +20,6 @@ export const ProjectStructure = () => {
           </div>
         ))}
       </section>
-      <Footer />
     </article>
   );
 };

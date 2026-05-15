@@ -9,7 +9,6 @@ export const Footer = () => {
   const currentIndex = menuItems.findIndex(
     (item) => item.path === location.pathname,
   );
-  console.log(currentIndex, "Index");
 
   const prevPage = currentIndex > 0 ? menuItems[currentIndex - 1] : null;
   const nextPage =

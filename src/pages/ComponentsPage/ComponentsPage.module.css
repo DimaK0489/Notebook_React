@@ -1,5 +1,5 @@
 .container {
-  background: white;
+  background: var(--bg-container);
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -7,7 +7,7 @@
 
 .subtitle {
   font-size: 22px;
-  color: #001529;
+  color: var(--bg-subtitle);
   margin-bottom: 15px;
   border-bottom: 1px solid #f0f0f0;
   padding-bottom: 10px;
@@ -19,7 +19,7 @@
 
 .example h3 {
   font-size: 16px;
-  color: #555;
+  color: var(--bg-desc);
   margin-bottom: 15px;
 }
 

@@ -1,7 +1,7 @@
 import { DocLink } from "../../components/DocLink/DocLink";
-import s from "./virtualDom.module.css";
+import s from "./VirtualDomPage.module.css";
 
-export const VirtualDom = () => {
+export const VirtualDomPage = () => {
   return (
     <article className={s.container}>
       <h1 className={s.title}>🏠 Virtual DOM</h1>

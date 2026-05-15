@@ -3,12 +3,12 @@
 }
 
 .title {
-  color: #001529;
+  color: var(--bg-subtitle);
   margin-bottom: 20px;
 }
 
 .description {
   font-size: 16px;
   line-height: 1.7;
-  color: #444;
+  color: var(--text-main);
 }

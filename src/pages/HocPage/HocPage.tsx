@@ -30,12 +30,12 @@ export const HocPage = () => {
       <ImportantBox title="Современный контекст: Хуки vs HOC">
         <div className={s.importantItem}>
           <ul>
-            <li className={s.text}>
+            <li className={s.importantDesc}>
               В современном коде React (версии 16.8+) большинство задач, которые
               раньше решались с помощью HOC, теперь гораздо проще решать через{" "}
               <strong>Кастомные Хуки (Custom Hooks)</strong>.
             </li>
-            <li className={s.text}>
+            <li className={s.importantDesc}>
               <strong>Почему хуки вытесняют HOC:</strong> Хуки не создают лишней
               вложенности в React, DevTools и их легче типизировать в
               TypeScript.

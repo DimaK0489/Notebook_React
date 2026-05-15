@@ -5,7 +5,7 @@ import { AboutApp } from "./pages/AboutApp/AboutApp";
 import { ROUTES } from "./constants/routes";
 import { ProjectStructure } from "./pages/ProjectStructure/ProjectStructure";
 import { ComponentsPage } from "./pages/ComponentsPage/ComponentsPage";
-import { VirtualDom } from "./pages/virtualDom/virtualDom";
+import { VirtualDomPage } from "./pages/VirtualDomPage/VirtualDomPage";
 import { PropsPage } from "./pages/PropsPage/PropsPage";
 import { UseStatePage } from "./pages/UseStatePage/UseStatePage";
 import { LifeCyclePage } from "./pages/LifeCyclePage/LifeCyclePage";
@@ -26,7 +26,7 @@ function App() {
         <Route index element={<Navigate to={ROUTES.about} replace />} />
         <Route path={ROUTES.about} element={<AboutApp />} />
         <Route path={ROUTES.structure} element={<ProjectStructure />} />
-        <Route path={ROUTES.rVirtualDom} element={<VirtualDom />} />
+        <Route path={ROUTES.rVirtualDom} element={<VirtualDomPage />} />
         <Route path={ROUTES.rComponents} element={<ComponentsPage />} />
         <Route path={ROUTES.rProps} element={<PropsPage />} />
         <Route path={ROUTES.rState} element={<UseStatePage />} />

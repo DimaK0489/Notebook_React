@@ -1,5 +1,5 @@
 .container {
-  background: white;
+  background: var(--bg-container);
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -17,12 +17,12 @@
 .subtitle {
   margin-top: 10px;
   font-size: 20px;
-  color: #001529;
+  color: var(--bg-subtitle);
   margin-bottom: 15px;
 }
 
 .demoBox {
-  background: #f0f7ff;
+  background: var(--bg-infoBox);
   padding: 24px;
   border-radius: 8px;
   border: 1px solid #bae7ff;

@@ -7,7 +7,7 @@ import { ThemeProvider } from "./provider/ThemeProvider.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Notebook_React">
       <ThemeProvider>
         <App />
       </ThemeProvider>

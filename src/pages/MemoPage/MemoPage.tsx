@@ -6,7 +6,7 @@ import { memoExample1, memoExample2 } from "../../constants/codeExample";
 import { DocLink } from "../../components/DocLink/DocLink";
 
 export const MemoPage = () => {
-  const [count, setCount] = useState<number>(0);
+  const [count, setCount] = useState(0);
   const [text, setText] = useState("");
 
   const expensiveValue = useMemo(() => {
@@ -33,6 +33,7 @@ export const MemoPage = () => {
             </button>
             <input
               type="text"
+              value={text}
               placeholder="Пиши тут, вычисление не сработает..."
               onChange={(e) => setText(e.target.value)}
               className={s.input}
